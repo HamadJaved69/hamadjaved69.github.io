@@ -9,18 +9,18 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
-                    {/* <li className="nav-item active">
-                        <a className="nav-link">Home <span className="sr-only">(current)</span></a>
+                    <li className="nav-item active">
+                        <a className="nav-link">About <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Features</a>
+                        <a className="nav-link">Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Pricing</a>
+                        <a className="nav-link">Experience</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link disabled">Disabled</a>
-                    </li> */}
+                        <a className="nav-link">Contact</a>
+                    </li>
                 </ul>
             </div>
             </nav>
