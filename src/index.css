@@ -3,6 +3,7 @@ body {
   font-family: "Nanum Gothic Coding", Roboto, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2b2e4a;
 }
 
 code {

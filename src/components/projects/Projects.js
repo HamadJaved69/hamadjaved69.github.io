@@ -4,21 +4,24 @@ import './Projects.css';
 const Projects = () => {
 
     const [repos, setRepos] = useState([]);
+    const [loading, setLoading] = useState(false);
     useEffect(() => {
+        setLoading(true);
         fetch('https://api.github.com/users/hamadjaved69/repos')
             .then(res => res.json())
             .then(res => {
                 setRepos(res);
+                setLoading(false);
             })
     }, [])
     return (
-        <div className="container">
+        <div className="container projects" id="projects">
             <h2>Projects</h2>
             <div className="row">
                 {
                     repos.map((repo, index) => (
                         <div className="col-md-4 mb-4">
-                            <a href={repo.homepage} className="card-link" target="_blank">
+                            <a href={repo.homepage} className="card-link" target="_blank" rel="noreferrer">
                                 <div className="project-card">
                                     <h5>{repo.name}</h5>
                                     <p>{repo.description}</p>
@@ -38,6 +41,14 @@ const Projects = () => {
                     ))
                 }
             </div>
+            {
+                loading &&
+                <div class="d-flex justify-content-center text-light">
+                    <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            }
         </div>
     )
 }
