@@ -1,27 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamad Javed</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamad Javed | Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
+        :root {
+            --primary-green: #4ade80;
+            --light-green: #dcfce7;
+            --dark-green: #22c55e;
         }
-        .contact {
-            margin-top: 20px;
+
+        .bg-primary-green {
+            background-color: var(--primary-green);
+        }
+
+        .bg-light-green {
+            background-color: var(--light-green);
+        }
+
+        .bg-dark-green {
+            background-color: var(--dark-green);
+        }
+
+        .text-primary-green {
+            color: var(--primary-green);
+        }
+
+        .border-primary-green {
+            border-color: var(--primary-green);
+        }
+
+        .hover\:bg-primary-green:hover {
+            background-color: var(--primary-green);
         }
     </style>
 </head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hello! Feel free to reach out to me.</p>
-    <div class="contact">
-        <p>Email: hamadjaved69@gmail.com</p>
-        <p>Phone: +92 334 6164001</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/hamadjaved69/" target="_blank">hamadjaved</a></p>
-    </div>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-light-green flex flex-col justify-center items-center text-center px-4 pt-16">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-6xl font-bold mb-4 text-primary-green">Hamad Javed</h1>
+            <p class="text-2xl text-gray-600 mb-6">Full Stack Developer</p>
+            <p class="text-lg text-gray-500 mb-8">Building scalable web applications with modern technologies</p>
+            <div class="flex gap-6 justify-center">
+                <a href="https://github.com/HamadJaved69" target="_blank"
+                    class="text-2xl hover:text-primary-green transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hamadjaved69/" target="_blank"
+                    class="text-2xl hover:text-primary-green transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/hamadjaved69" target="_blank"
+                    class="text-2xl hover:text-primary-green transition"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:hamad@example.com" class="text-2xl hover:text-primary-green transition"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-primary-green"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Catch-a-Jet</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive flight booking app with seamless CMS and
+                            third-party integration, offering secure payments via Stripe, PayPal, and credit cards, a
+                            user-friendly interface, and an efficient, hassle-free booking experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Ionic</span>
+                            <span
+                                class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Angular</span>
+                            <span
+                                class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Typescript</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">One
+                                Signal</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">RxJs</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://app.catch-a-jet.com/" class="text-primary-green hover:underline">View
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-primary-green"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Boat Reservation & Kiosk</h3>
+                        <p class="text-gray-600 mb-4">A versatile reservation system supporting boats, bikes, packages,
+                            and games, with seamless CMS integration, user-friendly booking and payment management,
+                            kiosk-based check-ins, account control, and clear cancellation policies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Angular</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Pusher</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Mollie
+                                Payment Integration</span>
+                            <span
+                                class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Bootstrap</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="https://productie.arendshorst.appelit.com/"
+                                class="text-primary-green hover:underline">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-primary-green"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Regiekr8</h3>
+                        <p class="text-gray-600 mb-4">A scalable and user-friendly academic management system built with
+                            React and Laravel, offering efficient management, role-based access, customizable settings,
+                            insightful reports, and a comprehensive toolset—all powered by a modern tech stack.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">
+                                Laravel</span>
+                            <span
+                                class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Inertia</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">One
+                                Signal</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Redux</span>
+                            <span class="px-3 py-1 bg-light-green text-primary-green rounded-full text-sm">Formik</span>
+                        </div>
+                        <div class="flex justify-between">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Bachelor of Science in Computer Science</h3>
+                            <p class="text-gray-600">University of Engineering and Technology, Lahore</p>
+                        </div>
+                        <span class="px-3 py-1 bg-light-green text-primary-green rounded-full">2015 - 2019</span>
+                    </div>
+                    <p class="mt-4 text-gray-700">Specialized in Software Engineering and Database Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Angular (Basic) Certificate </h3>
+                            <p class="text-gray-600">HackerRank</p>
+                        </div>
+                        <span class="px-3 py-1 bg-light-green text-primary-green rounded-full">2020</span>
+                    </div>
+                    <p class="mt-4 text-gray-700">It covers topics like MVC Frameworks, Components (Angular, Dynamic,
+                        Styling), TypeScript, Two Way Binding and Form Validation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-4xl mb-4 text-primary-green">🏆</div>
+                    <h3 class="text-xl font-bold mb-2">Hackathon Winner</h3>
+                    <p class="text-gray-600">First place in the 2023 Tech Innovation Challenge for developing an
+                        AI-powered healthcare solution.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-4xl mb-4 text-primary-green">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Open Source Contributor</h3>
+                    <p class="text-gray-600">Active contributor to multiple open-source projects with over 1000+
+                        commits.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-4xl mb-4 text-primary-green">🎓</div>
+                    <h3 class="text-xl font-bold mb-2">Dean's List</h3>
+                    <p class="text-gray-600">Consistently maintained a 3.8+ GPA throughout academic career.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-4xl mb-4 text-primary-green">💡</div>
+                    <h3 class="text-xl font-bold mb-2">Tech Speaker</h3>
+                    <p class="text-gray-600">Regular speaker at tech conferences and meetups on modern web development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-4 text-primary-green"><i class="fab fa-react"></i></div>
+                    <h3 class="font-bold">Frontend</h3>
+                    <p class="text-sm text-gray-600">React, Next.js, Angular, Ionic, React Native</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-4 text-primary-green"><i class="fas fa-server"></i></div>
+                    <h3 class="font-bold">Backend</h3>
+                    <p class="text-sm text-gray-600">Node.js, Laravel</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-4 text-primary-green"><i class="fas fa-database"></i></div>
+                    <h3 class="font-bold">Database</h3>
+                    <p class="text-sm text-gray-600">MySQL, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl text-center">
+                    <div class="text-4xl mb-4 text-primary-green"><i class="fas fa-cloud"></i></div>
+                    <h3 class="font-bold">DevOps</h3>
+                    <p class="text-sm text-gray-600">AWS, Docker, CI/CD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+            <p class="text-xl text-gray-600 mb-8">I'm always open to discussing new projects, creative ideas, or
+                opportunities to be part of your visions.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="mailto:hamadjaved69@gmail.com"
+                    class="px-8 py-3 bg-primary-green text-white rounded-lg hover:bg-dark-green transition">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="mb-4">© 2025 Hamad Javed. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
